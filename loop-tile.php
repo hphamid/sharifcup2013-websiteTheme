@@ -14,7 +14,7 @@
 				setup_postdata($post);
 				if($post->post_title=='معرفی')
 				{
-					$image=get_the_post_thumbnail( $post->ID, array(400,210), array('class'=>'slide','title'=>$post->post_title));
+					$image=wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); //get_the_post_thumbnail( $post->ID, array(400,210), array('class'=>'slide','title'=>$post->post_title));
 					$categ=get_the_category();
 					
 					foreach($categ as $category){
@@ -38,7 +38,7 @@
 					?>
 					<li class="tile" style="display: list-item;">
 						<a href="<? echo the_permalink(); ?>" alt="<? echo $tobeecho; ?>">
-							<? echo $image; ?>
+							<div class = "limited"><img src = "<? echo $image; ?>" class = "slide" width = "178px"/> </div>
 						</a>
 						<div class="small-caption">
 							<span><? echo $tobeecho; ?></span>

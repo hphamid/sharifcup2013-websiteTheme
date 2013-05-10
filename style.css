@@ -334,7 +334,7 @@ a:hover {
 }
 #lab-grid .small-caption {
 	position:absolute;
-	bottom:7px;
+	bottom:0px;
 	left:0;
 	display:block;
 	width:180px;
@@ -367,6 +367,16 @@ a:hover {
 }
 .js-overlay-image {
 	float:left;
+	min-height: 210px;
+	min-width: 178px;
+	/*background-position: 0px -215px;*/
+	background-repeat: no-repeat;
+}
+div.limited{
+	width:178px;
+	height:210px;
+	overflow:hidden;
+	box-shadow: 0px 0px 10px #222;
 }
 .tile>a>img{
 		box-shadow:0px 0px 10px #222;

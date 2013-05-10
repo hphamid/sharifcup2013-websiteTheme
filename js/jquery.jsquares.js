@@ -25,7 +25,7 @@
 			js_caption_slidedown_speed: 'normal', // how fast to slidedown the caption
 			
 			// Overwrite at your own risk! (more-so private)
-			_fade_selectors_on_hover: 'img',
+			_fade_selectors_on_hover: 'div.js-overlay-image',
 			_overlay_selector_class: 'js-caption-overlay'
 			
 		};
@@ -96,7 +96,7 @@
 					wrap_a_end = '</a>';
 				}
 				
-				contents = wrap_a_start + '<img src="' + img.attr('src')  + '" class="js-overlay-image" />' + wrap_a_end;
+				contents = wrap_a_start + '<div style = "background-image: url(\'' + img.attr('src')  + '\')" class="js-overlay-image" ></div>' + wrap_a_end;
 				contents += '<div class="js-overlay-html">' + conts + '</div><div style="clear:both"></div>';
 				
 			}
