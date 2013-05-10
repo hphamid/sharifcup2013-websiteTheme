@@ -88,8 +88,8 @@ display:none;
 	color:rgb(255,255,255);
 }
 html {
-	font-family: "tahoma", "Arial" , "Times New Roman", serif;
-	font-size: 14px;
+	font-family: "BMitra","tahoma", "Arial" , "Times New Roman", serif;
+	font-size: 16px;
 	color: #000;	
 	line-height:25px;
 }
@@ -107,6 +107,8 @@ a:hover {
 	width:100%;
 }
 .cmenu{
+	font-family: "BAban","tahoma", "Arial" , "Times New Roman", serif;
+	font-size: 14px;
 	height:40px;
 	width:100%;
     background-color: rgb(0,0,0);
@@ -115,6 +117,8 @@ a:hover {
    	position:absolute;
 }
 .mfixed{
+	font-family: "BAban","tahoma", "Arial" , "Times New Roman", serif;
+	font-size: 14px;
 	position:fixed;
 	opacity:0.8;
 	top:0px;

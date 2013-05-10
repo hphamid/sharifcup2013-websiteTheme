@@ -6,9 +6,11 @@
 	</div>
 		<div class="copyright">
 			© تمامی حقوق مادی و معنوی این سایت در اختیار
-			<b>
-			شریف کاپ
-			</b>
+			<a href = "http://sharifcup.sharif.ir">
+				<b>
+				شریف کاپ
+				</b>
+			</a>
 			است.
 		</div> 
 		<span class="designer" >

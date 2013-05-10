@@ -34,11 +34,26 @@
 			echo ' | ' . sprintf(  __('page %s','seminar'), max( $paged, $page ) );
 			?>
 		</title>
+		<style type="text/css">
+			@font-face {
+			font-family: 'BMitra';
+			src: url('<?php echo get_template_directory_uri(); ?>/fonts/BMitra.eot?#') format('eot'),
+			url('<?php echo get_template_directory_uri(); ?>/fonts/BMitra.woff') format('woff'),
+			url('<?php echo get_template_directory_uri(); ?>/fonts/BMitra.ttf') format('truetype');
+			font-weight: normal;
+			}
+			@font-face {
+			font-family: 'BAban';
+			src: url('<?php echo get_template_directory_uri(); ?>/fonts/BAban.ttf') format('truetype');
+			font-weight: bold;
+			}
+		</style>
 		<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/Logo16-16.png">
 		<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 		<link rel="stylesheet" type="text/css" media="all" href="<?echo get_template_directory_uri() ?>/slider/css/slider.css" />
-			<link rel="stylesheet" type="text/css" media="all" href="<?echo get_template_directory_uri() ?>/news/css/accordionME.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="<?echo get_template_directory_uri() ?>/news/css/accordionME.css" />
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Petit+Formal+Script">
+		<link rel="stylesheet" type="text/css" media="all" href="<?echo get_template_directory_uri() ?>/gallery/css/style.css" />
 		<style>
 			#header{
 				background-image:url("<?echo get_template_directory_uri() ?>/images/header.jpg");

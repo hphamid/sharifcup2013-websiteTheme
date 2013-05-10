@@ -16,7 +16,7 @@ $posts=get_posts($arg);
                 { setup_postdata($post);
                     ?>
                     <div class="set set<? echo $c ?>">
-                        <div class="newsTitle"><a href = "<? echo the_permalink(); ?>"><? echo $post->post_title ;?></a> <span class = "ndate"><? echo $post->post_modified;?></span></div>
+                        <div class="newsTitle"><a href = "<? echo the_permalink(); ?>"><? echo $post->post_title ;?></a> <span class = "ndate"><? echo $post->post_date ;?></span></div>
                         <div class="newsContent"><? the_excerpt() ; ?></div>
                     </div>
                     <?
