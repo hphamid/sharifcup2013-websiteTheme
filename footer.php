@@ -1,6 +1,9 @@
 ﻿</div><!--body-->
 <div id='footer'>
-
+	<div class = "footbar">
+		<?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('footbar')) :  ?>
+		<?php endif; ?>
+	</div>
 		<div class="copyright">
 			© تمامی حقوق مادی و معنوی این سایت در اختیار
 			<b>

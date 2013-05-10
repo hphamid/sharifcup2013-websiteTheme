@@ -74,7 +74,7 @@ display:none;
 	padding-bottom:5px;
 	overflow:hidden;
 	/*text-shadow: 0.1em 1em 0.5em rgb(99,99,99);*/
-	height:50px;
+	min-height:50px;
 	background-color:rgb(0,0,0);
 	color:rgb(255,255,255);
 	text-align: center;
@@ -84,7 +84,7 @@ display:none;
 	font-size: 11px;
 	font-weight:bold;
 }
-.designer a{
+#footer a{
 	color:rgb(255,255,255);
 }
 html {
@@ -413,6 +413,9 @@ div.limited{
 	color: rgb(255,255,255);
 	padding:5px;
 }
+.newsTitle a{
+	color: rgb(255,255,255);
+}
 .set{border-bottom:1px solid rgb(255,255,255)}
 .accordionWrapper{
 	width:345px;
@@ -431,4 +434,37 @@ div.limited{
 }
 .newsTitle:hover .ndate{
 	display: inline;
+}
+/**************footbar**************/
+.footbar{
+	width:100%;
+	overflow:hidden;
+	height:auto;
+	/*text-align: right;*/
+}
+.fwidget{
+	width:auto;
+	padding: 0px 30px;
+	margin:20px;
+	margin-top: 0px;
+	opacity:0.8;
+	overflow:hidden;
+}
+.ftitle{
+padding:5px;
+}
+.footbar ul li{
+	/*border-bottom:1px solid rgb(27,27,27);*/
+	padding:6px 0px;
+	line-height:15px;
+}
+.footbar ul{
+	list-style-position:outside;
+	list-style-type:none;
+	padding:0px;
+	margin:10px;
+}
+.footbar ul ul{
+	margin-right:20px;
+	margin-left:0px;
 }
