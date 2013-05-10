@@ -37,6 +37,7 @@
 		<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/Logo16-16.png">
 		<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 		<link rel="stylesheet" type="text/css" media="all" href="<?echo get_template_directory_uri() ?>/slider/css/slider.css" />
+			<link rel="stylesheet" type="text/css" media="all" href="<?echo get_template_directory_uri() ?>/news/css/accordionME.css" />
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Petit+Formal+Script">
 		<style>
 			#header{

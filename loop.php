@@ -4,6 +4,7 @@
 	{
 		get_template_part( 'loop', 'slider' );
 		get_template_part( 'loop', 'tile' );
+		get_template_part( 'loop', 'news' );
 	}
 	else
 	{ 

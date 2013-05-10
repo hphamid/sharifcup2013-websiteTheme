@@ -1,11 +1,28 @@
-<div id="news">
-  <ul id="js-news" class="js-hidden">
-    <li class="news-item"><a href="http://google.com">گوگل</a></li>
-    <li class="news-item">jQuery News Ticker now has support for right-to-left languages!</li>
-    <li class="news-item">jQuery News Ticker now has support for loading content via an RSS feed!</li>
-    <li class="news-item">jQuery News Ticker now has an optional fade effect between items!</li>
-    <li class="news-item">New updates have been made to jQuery News Ticker! Check below for more details!</li>
-    <li class="news-item">jQuery News Ticker is now compatible with jQuery 1.3.2! See below for further details and for latest download.</li>
-    <li class="news-item">Further updates to jQuery News Ticker are coming soon!</li>
-  </ul>
+<?
+$cattype="news";
+$count=100;
+$cattypeid=get_cat_ID($cattype);
+$arg=array('numberposts'=>'-1','category'=>$cattypeid,'post_type'=>'post','post_status'=>'publish');
+$posts=get_posts($arg);
+?>
+<div id="news" class="accordionWrapper">
+    <?
+        $c=1;
+        if ( sizeof($posts)) 
+            { 
+            foreach($posts as $post)
+            { 
+                if ($c<=$count)
+                { setup_postdata($post);
+                    ?>
+                    <div class="set set<? echo $c ?>">
+                        <div class="newsTitle"><? echo $post->post_title ;?> <span class = "ndate"><? echo $post->post_modified;?></span></div>
+                        <div class="newsContent"><? the_excerpt() ; ?></div>
+                    </div>
+                    <?
+                    $c++;
+                }
+            }
+        }
+    ?>
 </div>

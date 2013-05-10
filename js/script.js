@@ -23,6 +23,7 @@ var BD = {
 $(document).ready(function(){		
 			activateslider();
 			activatetile();
+			activatenews();
 			makembutton();
 			preventlinks();
 	var oldhash = location.hash;
@@ -74,6 +75,10 @@ function preventlinks()
   event.preventDefault();
 	});
 }
+function activatenews()
+{
+	$("#news").msAccordion({vertical:true});
+}
 function activatetile()
 {
 	BD.init();
@@ -119,6 +124,7 @@ function hashchange(hash){
 			{
 				activateslider();
 				activatetile();
+				activatenews();
 			}
 			})
 			$.post(address,{AJAX:"true",title:"true"},function(data){
