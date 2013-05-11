@@ -38,7 +38,9 @@
 					?>
 					<li class="tile" style="display: list-item;">
 						<a href="<? echo the_permalink(); ?>" alt="<? echo $tobeecho; ?>">
-							<div class = "limited"><img src = "<? echo $image; ?>" class = "slide" width = "178px"/> </div>
+							<!-- <div class = "limited"> -->
+								<img src = "<? echo $image; ?>" class = "slide" width = "178px" height= "198px"/> 
+							<!-- </div> -->
 						</a>
 						<div class="small-caption">
 							<span><? echo $tobeecho; ?></span>
