@@ -17,6 +17,8 @@ $posts=get_posts($arg);
                 <img src="${src}" alt="" class="ib-preview-img"/>
                 <span class="ib-preview-descr" style="display:none;">${description}</span>
                 <div class="ib-nav" style="display:none;">
+                    <span class="ib-nav-prev">Previous</span>
+                    <span class="ib-nav-next">Next</span>
                 </div>
                 <span class="ib-close" style="display:none;">Close Preview</span>
                 <div class="ib-loading-large" style="display:none;">Loading...</div>
@@ -362,9 +364,10 @@ $posts=get_posts($arg);
                                 }
                                 
                                 var $item       = $ibImgItems.eq( current ),
-                                    largeSrc    = $item.children('img').data('largesrc'),
+                                    largeSrc    = $item.children('img').attr('data-largesrc'),
                                     description = $item.children('span').text();
                                     
+
                                 preloadImage( largeSrc, function() {
                                     
                                     $loading.hide();
