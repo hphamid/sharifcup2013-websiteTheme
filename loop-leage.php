@@ -17,7 +17,7 @@ foreach($categories as $category){
       $league = array('name' => $category->cat_name, 'id' => $category->cat_ID);
     }
     else
-      { 
+      {
         $league = '';
       }
   }
@@ -32,8 +32,8 @@ else{
     get_template_part( 'loop', 'color' );
   ?>
   <div class="list">
-    <?php   
-    
+    <?php
+
     if ( ! have_posts() ) : ?>
     <div class="rtext">
       <h1 class="title">
@@ -48,15 +48,17 @@ else{
       <?php endif; ?>
 
   <?php while ( have_posts() ) : the_post(); ?>
+  <?php if (is_single() || get_the_title() == "معرفی"): ?>
     <div id="post-<?php the_ID(); ?>" class="rtextm">
       <div class="titlem"><a href="<?php  echo the_permalink(); ?>">
         <? the_title(); ?></a>
-                </div><!--titlem-->   
+                </div><!--titlem-->
       <div class="textcontent">
         <?php the_content( __( 'ادامه ی مطلب <span class="meta-nav">&rarr;</span>', 'twentyten' ) ); ?>
         <?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'twentyten' ), 'after' => '</div>' ) ); ?>
         <?php edit_post_link( 'ویرایش'); ?>
       </div><!-- .content --></div><!-- #post-## -->
+    <?php endif ?>
   <?php endwhile; // End the loop. Whew. ?>
 
   <?php /* Display navigation to next/previous pages when applicable */ ?>

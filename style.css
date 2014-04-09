@@ -1,4 +1,4 @@
-/* 
+/*
 theme name:sharifcup2013
 
 version:1 released;
@@ -16,7 +16,7 @@ body{
 	background-size: 100% 100%;
 	background-repeat:no-repeat;
 	background-attachment:fixed;
-	background-position:center; 
+	background-position:center;
 }
 #main{
 	width:100%;
@@ -90,7 +90,7 @@ display:none;
 html {
 	font-family: "BMitra","tahoma", "Arial" , "Times New Roman", serif;
 	font-size: 16px;
-	color: #000;	
+	color: #000;
 	line-height:25px;
 }
 a {
@@ -157,7 +157,7 @@ a:hover {
 	#menuContent>ul>li:hover>a>span{
   background-color:rgb(220, 0, 8);
 }
-.melementClicked{ 
+.melementClicked{
 	box-shadow: 0px 0px 5px 1px #555 inset;
 }
 #menuContent ul{
@@ -257,6 +257,12 @@ a:hover {
 	background-repeat: no-repeat;
 	background-position: 50% 95%;
 }
+.textcontent a{
+	color:blue
+}
+.textcontent a:hover{
+	color:blue
+}
 .leftmenue a{
 	color:#000;
 }
@@ -319,7 +325,7 @@ a:hover {
 #lab-grid {
 	margin:0;
 	padding:0;
-}	
+}
 #lab-grid li {
 	list-style:none;
 	float:left;
